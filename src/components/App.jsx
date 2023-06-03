@@ -5,7 +5,6 @@ import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions.jsx'
 import { Section } from 'components/Section/Section.jsx';
 import { Notification } from 'components/Notification/Notification.jsx';
 
-
 export class App extends Component {
   state = {
     good: 0,
@@ -37,13 +36,10 @@ export class App extends Component {
 
     return (
       <div>
-        <Section title="Please leave feedback">
-          <FeedbackOptions
-            options={options}
-            addFeedback={this.addFeedback}
-          />
+        <Section  title="Please leave feedback">
+          <FeedbackOptions options={options} addFeedback={this.addFeedback} />
         </Section>
-        <Section title="Statistics">
+        <Section title="Statistics" >
           {total !== 0 ? (
             <Statistics
               good={good}
@@ -62,4 +58,3 @@ export class App extends Component {
 }
 
 export default App;
-
