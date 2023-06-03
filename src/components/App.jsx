@@ -1,7 +1,12 @@
-import { Counter } from 'components/Counter/Counter.jsx';
+//import { Counter } from 'components/Counter/Counter.jsx';
 import { Component } from 'react';
+import { Statistics } from 'components/Statistics/Statistics.jsx';
+import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions.jsx';
+import { Section } from 'components/Section/Section.jsx';
+import { Notification } from 'components/Notification/Notification.jsx';
 
-class App extends Component {
+
+export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -35,7 +40,7 @@ class App extends Component {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
-            onLeaveFeedback={this.onLeaveFeedback}
+            addFeedback={this.addFeedback}
           />
         </Section>
         <Section title="Statistics">
@@ -57,3 +62,4 @@ class App extends Component {
 }
 
 export default App;
+
