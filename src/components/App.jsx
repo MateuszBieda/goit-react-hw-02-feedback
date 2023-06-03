@@ -1,5 +1,5 @@
 import { Counter } from 'components/Counter/Counter.jsx';
-import { Component } from 'react';
+//import { Component } from 'react';
 
 export const App = () => {
   return (
