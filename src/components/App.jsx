@@ -1,3 +1,6 @@
+import { Counter } from 'components/Counter/Counter.jsx';
+import { Component } from 'react';
+
 export const App = () => {
   return (
     <div
@@ -5,12 +8,18 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
+        flexDirection:'column',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        fontSize:60,
+        fontWeight:500,
+        color: '#010101',
       }}
     >
-      React homework template
+      Please leave feedback
+      <Counter />
+      
+
+    
     </div>
   );
 };
