@@ -12,8 +12,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  addFeedback = event => {
-    const stateName = event.target.name;
+  addFeedback = stateName => {
     this.setState(prevState => ({
       [stateName]: prevState[stateName] + 1,
     }));

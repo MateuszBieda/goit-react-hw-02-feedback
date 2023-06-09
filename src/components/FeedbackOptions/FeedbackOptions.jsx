@@ -8,10 +8,9 @@ export const FeedbackOptions = ({ options, addFeedback }) => {
         <button
           className={css.button}
           key={option}
-          onClick={addFeedback}
-          name={option}
+          onClick={()=>addFeedback(option)}
         >
-          {option}
+          {option}  
         </button>
       ))}
     </div>
